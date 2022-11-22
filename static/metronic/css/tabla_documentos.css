@@ -1,0 +1,27 @@
+.rwd-table {
+    font-family: "Helvetica Neue", Helvetica, sans-serif
+  }
+
+  
+  .th-td {
+    padding: 5px 10px;
+  }
+  
+  .tbody-tr:nth-child(even) {
+    background: WhiteSmoke;
+  }
+  
+  .tbody-tr td {
+    text-align:left;
+  }
+
+  tfoot {
+    background: SeaGreen;
+    color: white;
+    text-align: right;
+  }
+  
+  tfoot tr th:last-child {
+    font-family: monospace;
+  }
+  
