@@ -1,10 +1,10 @@
-version: '3.8'
+version: '3.4'
 
 services:
-  web:
-    build: .
-    command: python /code/manage.py runserver 0.0.0.0:8000
-    volumes:
-      - .:/code
+  devopsmoises:
+    image: devopsmoises
+    build:
+      context: .
+      dockerfile: ./Dockerfile
     ports:
       - 8000:8000
