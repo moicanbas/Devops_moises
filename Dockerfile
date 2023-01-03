@@ -7,7 +7,6 @@ ENV PYTHONDONTWRITEBYTECODE=1
 # Turns off buffering for easier container logging
 ENV PYTHONUNBUFFERED=1
 
-
 # Set work directory
 WORKDIR /app
 
