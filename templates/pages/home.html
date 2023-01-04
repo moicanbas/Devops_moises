@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block navbar %}
+{% include 'components/navbar.html' %}
+{% endblock navbar %}
+
+{% block content %}
+    <h1>Hola mundo</h1>
+    <div>
+        {% for product in products %}
+            <h6>{{ product.name }}</h6>
+            <img src="{{product.thumbnail.url}}" alt="aquí está">
+            <h5>{{ product.description|truncatechars:60 }}</h5>
+            <h6>${{ product.price_display }}</h6>
+        {% endfor %}
+    </div>
+{% endblock content %}
+
+{% block footer %}
+{% endblock footer %}
+
+{% block javascript %}
+{% endblock javascript %}

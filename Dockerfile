@@ -1,11 +1,10 @@
 # Pull base image
-FROM python:3.8
+FROM python:3.10
 
-# Keeps Python from generating .pyc files in the container
-ENV PYTHONDONTWRITEBYTECODE=1
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1
 
-# Turns off buffering for easier container logging
-ENV PYTHONUNBUFFERED=1
+ENV PYTHONUNBUFFERED 1
 
 # Set work directory
 WORKDIR /app
